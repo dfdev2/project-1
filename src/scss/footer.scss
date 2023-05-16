@@ -1,0 +1,25 @@
+//====================================================================================================
+.footer {
+   &__body {
+      display: flex;
+      width: 100%;
+      @include adaptiveValue("padding", 30, 10);
+      align-items: center;
+      justify-content: center;
+      font-style: normal;
+      font-weight: 500;
+      font-size: rem(23);
+      line-height: math.div(34, 23);
+      color: #696969;
+   }
+
+   &__link {
+      @media (any-hover: hover) {
+         &:hover {
+            text-decoration: underline;
+         }
+      }
+   }
+}
+
+//====================================================================================================

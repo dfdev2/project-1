@@ -1,0 +1,109 @@
+.contact {
+  background: #5e3aee;
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    @media (max-width: $mobile) {
+      display: block;
+      padding: 0px 0px 30px 0px;
+    }
+  }
+  &__info {
+    padding: 20px 0px 0px 0px;
+    flex: 1 1 60%;
+    max-width: 535px;
+    @media (max-width: $mobile) {
+      flex: 1 1 100%;
+      max-width: 100%;
+      text-align: center;
+      padding: 10px 0px 0px 0px;
+    }
+  }
+
+  &__title {
+    color: #fff;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 36px;
+    color: #fff;
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  &__image {
+    max-width: 530px;
+    max-height: 300px;
+    overflow: hidden;
+    margin: 0px 0px 20px 0px;
+    @media (max-width: $mobile) {
+      max-width: 100%;
+      margin: 0px 0px 20px 0px;
+    }
+    & img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__form {
+    flex: 1 1 40%;
+    max-width: 460px;
+    padding: 40px 10px 20px 30px;
+    @media (max-width: $mobile) {
+      flex: 1 1 100%;
+      max-width: 100%;
+      padding: 20px 20px 0px 20px;
+    }
+  }
+
+  &__input {
+    margin: 0px 0px 20px 0px;
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    border-radius: 3px;
+  }
+
+  &__mesage {
+    width: 100%;
+    padding: 10px;
+    height: 140px;
+    margin: 0px 0px 30px 0px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+  }
+
+  &__button {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    padding: 5px;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    @media (any-hover: hover) {
+      &:hover {
+        transition: 0.3s ease 0s;
+        background: rgb(123, 120, 120);
+        color: #fff;
+      }
+    }
+  }
+}
+.form__text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  color: #fff;
+}

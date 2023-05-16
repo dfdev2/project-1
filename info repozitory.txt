@@ -1,0 +1,6 @@
+git branch -m main source
+git fetch origin
+git branch -u origin/source source
+git remote set-head origin -a
+
+https://github.com/dfdev2/project-1.git
